@@ -1,4 +1,12 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+#{form @uploadVideo(), enctype:'multipart/form-data'}
+    <label>Video file</label> <input type="file" id="video" name="video" /><br>
+    <label>Output Type</label> <select id="outputtype" name="outputtype">
+    	<option value="avi">AVI - Best for Windows</option>
+    	<option value="flv">FLV - Flash video</option>
+    	<option value="mov">MOV - Apple Quicktime Movie</option>
+    </select><br>
+    <input type="submit" value="Convert it..." />
+#{/}

@@ -2,3 +2,13 @@
 
 require:
     - play
+    - xuggle -> xuggle-xuggler 5.4
+
+repositories:
+    - xuggle:
+        type:       iBiblio
+        root:   "http://xuggle.googlecode.com/svn/trunk/repo/share/java/"
+        contains:
+            - com.xuggle -> *
+            - xuggle -> *
+
