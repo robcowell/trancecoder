@@ -21,7 +21,7 @@ public class Application extends Controller {
         render();
     }
 
-    public static void uploadVideo(File video, String outputtype)
+    public static void uploadvideo(File video, String outputtype)
     {
 	String outputFilename = "public/output." + outputtype;
 	IMediaReader reader = ToolFactory.makeReader(video.getPath());
